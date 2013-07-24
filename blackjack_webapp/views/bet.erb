@@ -1,0 +1,11 @@
+<h2><%= session[:player_name] %> has $<%= session[:player_pot].to_i %></h2>
+<img src="/images/coins.png">
+<br />
+<br />
+<h6>How much do you want to bet?</h6>
+<br />
+<form action='/bet' method='post'>
+	<input type='text' name="bet_amount" /> 
+	<br/>
+	<input type="submit" value="Bet!" class="btn" />
+</form>	
